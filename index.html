@@ -9,6 +9,44 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+            <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stumps & Stories | Cricket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8fbff; /* Light blue tint from screenshot */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: #e3f2fd; /* Light blue header */
+            padding: 1rem 2rem;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .content-section {
+            padding: 50px 0;
+        }
+        .cricket-img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .text-content {
+            padding-left: 30px;
+        }
+        .btn-outline-primary {
+            border-color: #0d6efd;
+            color: #0d6efd;
+            padding: 8px 25px;
+            margin-top: 20px;
+        }
+    </style>
+
 </head>
 <body>
     <div class="container-fluid"> 
@@ -34,12 +72,33 @@
                                 <a class="nav-link" href="pmatches.html">Previous Matches</a>
                             </li>
                         </ul>
-                        <span class="navbar-text">
-                            Navbar text with an inline element
-                        </span>
                     </div>
                 </div>
             </nav>
+            <div class="container content-section">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&q=80&w=1000"
+                            alt="Cricketer Batting" class="cricket-img">
+                    </div>
+            
+                    <div class="col-md-6 text-content">
+                        <h2 class="fw-bold mb-4">Welcome to Stumps & Stories</h2>
+                        <p class="text-secondary">
+                            Experience the thrill of cricket like never before! Our platform brings you the latest Indian circket match highlights,
+                            with expert insights and in-depth analysis. Whether you're a seasoned fan or new to cricket, Stumps &
+                            Stories is your ultimate destination.
+                        </p>
+                        <p class="text-secondary">
+                            From international tournaments to details about the Indian Cricket team players, we cover it all. Our dedicated team is committed
+                            to providing stories from the archives and the latest updates from the pitch. Join our community and
+                            celebrate the spirit of cricket together!
+                        </p>
+                        <a href = "https://www.espncricinfo.com/team/india-6" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+                </div>
     </div>
 </body>
 </html>
