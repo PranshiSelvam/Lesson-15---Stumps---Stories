@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stumps & Stories | Cricket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8fbff;
+            /* Light blue tint from screenshot */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: #e3f2fd;
+            /* Light blue header */
+            padding: 1rem 2rem;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .content-section {
+            padding: 50px 0;
+        }
+
+        .cricket-img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-content {
+            padding-left: 30px;
+        }
+
+        .btn-outline-primary {
+            border-color: #0d6efd;
+            color: #0d6efd;
+            padding: 8px 25px;
+            margin-top: 20px;
+        }
+        body { background-color: #f4f7f6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .section-title { color: #002147; font-weight: 800; position: relative; padding-bottom: 15px; }
+        .section-title::after {
+            content: ''; background: #6c757d; height: 4px; width: 50px;
+            position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+        }
+        .match-card {
+            border: none; border-radius: 15px; overflow: hidden;
+            background: #fff; transition: all 0.3s ease; box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        .match-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .match-type {
+            background: #002147; color: #fff; padding: 8px 15px;
+            font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+        }
+        .hero-img { height: 220px; width: 100%; object-fit: cover; }
+        .result-strip {
+            background: #e9ecef; color: #002147; font-weight: 700;
+            text-align: center; padding: 10px; font-size: 0.9rem; border-bottom: 1px solid #dee2e6;
+        }
+        .stats-container { display: flex; border-top: 1px solid #eee; background: #fafafa; }
+        .stat-item { flex: 1; padding: 15px; text-align: center; border-right: 1px solid #eee; }
+        .stat-item:last-child { border-right: none; }
+        .stat-val { display: block; font-weight: 800; font-size: 1.1rem; color: #333; }
+        .stat-label { display: block; font-size: 0.7rem; color: #888; text-transform: uppercase; }
+        .venue-info { font-size: 0.8rem; color: #666; margin-top: 5px; }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" data-bs-theme="light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="Stumps & Stories.png" width="70px" height="70px">
+                    Stumps & Stories </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="players.html">Team Players</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="achievements.html">Recent Achievements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="umatches.html">Upcoming Matches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pmatches.html">Previous Matches</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="archive-header">MATCH ARCHIVES</h2>
+        <p class="text-muted mt-3">Comprehensive reports from the last 6 months of action.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="card match-card">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1200/lsci/db/PICTURES/CMS/394700/394793.6.jpg"
+                    class="match-img" alt="IND vs SA">
+                <div class="score-banner">IND 188/6 | SA 158/10</div>
+                <div class="report-body">
+                    <h5 class="match-title">5th T20I vs South Africa</h5>
+                    <p class="match-desc">India secured the series 4-1. Tilak Varma’s explosive half-century combined
+                        with a clinical bowling display in the death overs left the Proteas 30 runs short.</p>
+                    <div class="potm-tag">POTM: <span class="potm-name">Tilak Varma</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card match-card">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1200/lsci/db/PICTURES/CMS/392000/392015.6.jpg"
+                    class="match-img" alt="IND vs NZ">
+                <div class="score-banner">IND 212/3 | NZ 166/10</div>
+                <div class="report-body">
+                    <h5 class="match-title">3rd T20I vs New Zealand</h5>
+                    <p class="match-desc">Ishan Kishan’s maiden T20I century stole the show in Thiruvananthapuram. His
+                        103* came off just 43 balls, powering India to a massive total.</p>
+                    <div class="potm-tag">POTM: <span class="potm-name">Ishan Kishan</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card match-card">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1200/lsci/db/PICTURES/CMS/322600/322697.6.jpg"
+                    class="match-img" alt="IND vs NZ">
+                <div class="score-banner">NZ 289/7 | IND 248/10</div>
+                <div class="report-body">
+                    <h5 class="match-title">3rd ODI vs New Zealand</h5>
+                    <p class="match-desc">A rare home defeat. Despite a fighting 82 from Shubman Gill, Daryl Mitchell’s
+                        century proved too much for the Indian middle order to chase down.</p>
+                    <div class="potm-tag">POTM: <span class="potm-name">Daryl Mitchell</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card match-card">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1200/lsci/db/PICTURES/CMS/319900/319940.6.jpg"
+                    class="match-img" alt="IND vs SA">
+                <div class="score-banner">IND 176/4 | SA 75/10</div>
+                <div class="report-body">
+                    <h5 class="match-title">1st T20I vs South Africa</h5>
+                    <p class="match-desc">A historic night in Cuttack. Jasprit Bumrah claimed his 100th T20I wicket as
+                        the South African batting lineup collapsed under lights.</p>
+                    <div class="potm-tag">POTM: <span class="potm-name">Jasprit Bumrah</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card match-card">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1200/lsci/db/PICTURES/CMS/371000/371005.6.jpg"
+                    class="match-img" alt="Border Gavaskar">
+                <div class="score-banner">IND 445 & 220 | AUS 310 & 150</div>
+                <div class="report-body">
+                    <h5 class="match-title">2nd Test vs Australia</h5>
+                    <p class="match-desc">India’s spinners dominated on a turning track. Ravichandran Ashwin’s 7-wicket
+                        haul in the match ensured a lead in the BGT series.</p>
+                    <div class="potm-tag">POTM: <span class="potm-name">R. Ashwin</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card match-card">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1200/lsci/db/PICTURES/CMS/367300/367341.6.jpg"
+                    class="match-img" alt="Asia Cup">
+                <div class="score-banner">PAK 252/7 | IND 256/2</div>
+                <div class="report-body">
+                    <h5 class="match-title">Asia Cup Final vs Pakistan</h5>
+                    <p class="match-desc">A dominant 8-wicket win. Virat Kohli and KL Rahul shared a 180-run partnership
+                        to guide India to their 9th Asia Cup title.</p>
+                    <div class="potm-tag">POTM: <span class="potm-name">Virat Kohli</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card match-card">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1200/lsci/db/PICTURES/CMS/376000/376043.6.jpg"
+                    class="match-img" alt="IND vs SL">
+                <div class="score-banner">SL 170/9 | IND 171/3</div>
+                <div class="report-body">
+                    <h5 class="match-title">3rd ODI vs Sri Lanka</h5>
+                    <p class="match-desc">India chased down 170 with ease. Shreyas Iyer anchored the innings after early
+                        wickets, ensuring a clean sweep of the islanders.</p>
+                    <div class="potm-tag">POTM: <span class="potm-name">Shreyas Iyer</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card match-card">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1200/lsci/db/PICTURES/CMS/316600/316605.6.jpg"
+                    class="match-img" alt="IND vs WI">
+                <div class="score-banner">IND 195/4 | WI 190/8</div>
+                <div class="report-body">
+                    <h5 class="match-title">T20I vs West Indies</h5>
+                    <p class="match-desc">A thriller in Florida. Hardik Pandya’s final-over heroics with both bat and
+                        ball helped India clinch a 5-run victory.</p>
+                    <div class="potm-tag">POTM: <span class="potm-name">Hardik Pandya</span></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    </div>
+    </div>
+    <footer class="footer mt-auto py-5" style="background-color: #002147; border-top: 5px solid #6c757d;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white fw-bold mb-3">Stumps & Stories</h5>
+                    <p style="color: #adb5bd;">
+                        Bringing you the heart of the game. From historic triumphs to future legends, we cover the world
+                        of
+                        cricket with passion and precision.
+                    </p>
+                    <div class="mt-3">
+                        <a href="https://x.com/ICC" class="me-3 text-decoration-none"
+                            style="color: #adb5bd;">Twitter</a>
+                        <a href="https://www.instagram.com/icc/?hl=en" class="me-3 text-decoration-none"
+                            style="color: #adb5bd;">Instagram</a>
+                        <a href="https://www.youtube.com/@ICC" class="text-decoration-none"
+                            style="color: #adb5bd;">YouTube</a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                    <h6 class="text-white text-uppercase fw-bold mb-3">The Pitch</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none d-block mb-2"
+                                style="color: #adb5bd;">Home</a></li>
+                        <li><a href="players.html" class="text-decoration-none d-block mb-2"
+                                style="color: #adb5bd;">Team India</a>
+                        </li>
+                        <li><a href="pmatches.html" class="text-decoration-none d-block mb-2"
+                                style="color: #adb5bd;">Previous Matches</a>
+                        </li>
+                        <li><a href="achievements.html" class="text-decoration-none d-block mb-2"
+                                style="color: #adb5bd;">Achievements</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-white text-uppercase fw-bold mb-3">Match Center</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="umatches.html" class="text-decoration-none d-block mb-2"
+                                style="color: #adb5bd;">Upcoming Matches</a>
+                        </li>
+                        <li><a href="https://www.icc-cricket.com/rankings" class="text-decoration-none d-block mb-2"
+                                style="color: #adb5bd;">ICC Rankings</a>
+                        </li>
+                        <li><a href="https://www.espncricinfo.com/team/india-6/match-schedule-fixtures-and-results"
+                                class="text-decoration-none d-block mb-2" style="color: #adb5bd;">Future Tours</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-white text-uppercase fw-bold mb-3">Stay Updated</h6>
+                    <p class="small" style="color: #adb5bd;">Get the latest match reports delivered to your inbox.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control form-control-sm me-2" placeholder="Email Address"
+                            style="background: transparent; border: 1px solid #6c757d; color: white;">
+                        <button class="btn btn-outline-light btn-sm" type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="my-4" style="background-color: #6c757d; height: 1px; border: 0;">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0" style="color: #6c757d; font-size: 0.85rem;">
+                        &copy; 2026 Stumps & Stories. All Rights Reserved. Designed for the Spirit of Cricket.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <a href="#" class="text-decoration-none me-3" style="color: #6c757d; font-size: 0.85rem;">Privacy
+                        Policy</a>
+                    <a href="#" class="text-decoration-none" style="color: #6c757d; font-size: 0.85rem;">Terms of
+                        Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
